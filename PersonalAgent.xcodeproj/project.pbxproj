@@ -6,20 +6,56 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		A1C0DE012FF5000100AA0001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86311B732FF4422F00FC98D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86311B7A2FF4422F00FC98D8;
+			remoteInfo = PersonalAgent;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		86311B7B2FF4422F00FC98D8 /* PersonalAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C0DE012FF5000100AA0002 /* PersonalAgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		867D37D62FF4480F00378AEE /* Exceptions for "PersonalAgent" folder in "PersonalAgent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 86311B7A2FF4422F00FC98D8 /* PersonalAgent */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		86311B7D2FF4422F00FC98D8 /* PersonalAgent */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				867D37D62FF4480F00378AEE /* Exceptions for "PersonalAgent" folder in "PersonalAgent" target */,
+			);
 			path = PersonalAgent;
+			sourceTree = "<group>";
+		};
+		A1C0DE012FF5000100AA0003 /* PersonalAgentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PersonalAgentTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		86311B782FF4422F00FC98D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C0DE012FF5000100AA0004 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				86311B7D2FF4422F00FC98D8 /* PersonalAgent */,
+				A1C0DE012FF5000100AA0003 /* PersonalAgentTests */,
 				86311B7C2FF4422F00FC98D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				86311B7B2FF4422F00FC98D8 /* PersonalAgent.app */,
+				A1C0DE012FF5000100AA0002 /* PersonalAgentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +108,29 @@
 			productReference = 86311B7B2FF4422F00FC98D8 /* PersonalAgent.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A1C0DE012FF5000100AA0007 /* PersonalAgentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C0DE012FF5000100AA000B /* Build configuration list for PBXNativeTarget "PersonalAgentTests" */;
+			buildPhases = (
+				A1C0DE012FF5000100AA0005 /* Sources */,
+				A1C0DE012FF5000100AA0004 /* Frameworks */,
+				A1C0DE012FF5000100AA0006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C0DE012FF5000100AA0008 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1C0DE012FF5000100AA0003 /* PersonalAgentTests */,
+			);
+			name = PersonalAgentTests;
+			packageProductDependencies = (
+			);
+			productName = PersonalAgentTests;
+			productReference = A1C0DE012FF5000100AA0002 /* PersonalAgentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +143,10 @@
 				TargetAttributes = {
 					86311B7A2FF4422F00FC98D8 = {
 						CreatedOnToolsVersion = 26.6;
+					};
+					A1C0DE012FF5000100AA0007 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 86311B7A2FF4422F00FC98D8;
 					};
 				};
 			};
@@ -100,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				86311B7A2FF4422F00FC98D8 /* PersonalAgent */,
+				A1C0DE012FF5000100AA0007 /* PersonalAgentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		86311B792FF4422F00FC98D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C0DE012FF5000100AA0006 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1C0DE012FF5000100AA0005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1C0DE012FF5000100AA0008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86311B7A2FF4422F00FC98D8 /* PersonalAgent */;
+			targetProxy = A1C0DE012FF5000100AA0001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		86311B842FF4423100FC98D8 /* Debug */ = {
@@ -251,8 +339,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3B86V2VZBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PersonalAgent/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +372,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3B86V2VZBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PersonalAgent/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,6 +398,50 @@
 			};
 			name = Release;
 		};
+		A1C0DE012FF5000100AA0009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3B86V2VZBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jerry.PersonalAgentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalAgent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersonalAgent";
+			};
+			name = Debug;
+		};
+		A1C0DE012FF5000100AA000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3B86V2VZBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jerry.PersonalAgentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalAgent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersonalAgent";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +459,15 @@
 			buildConfigurations = (
 				86311B872FF4423100FC98D8 /* Debug */,
 				86311B882FF4423100FC98D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C0DE012FF5000100AA000B /* Build configuration list for PBXNativeTarget "PersonalAgentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C0DE012FF5000100AA0009 /* Debug */,
+				A1C0DE012FF5000100AA000A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
