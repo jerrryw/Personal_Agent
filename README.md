@@ -140,14 +140,6 @@ Before using it on any other network, put the server behind HTTPS (for example
 Tailscale or a reverse proxy), add a token, and replace `NSAllowsArbitraryLoads`
 with an `NSExceptionDomains` entry for that one host.
 
-## Roadmap
-
-- [ ] Conversation history (currently each message replaces the last response)
-- [ ] Server URL configurable in-app instead of hardcoded
-- [ ] Auth token + HTTPS
-- [ ] Surface `/execute` HTTP errors instead of showing "Done."
-- [ ] App icon
-
 ## License
 
 No license has been chosen yet. All rights reserved by the author until one is added.
